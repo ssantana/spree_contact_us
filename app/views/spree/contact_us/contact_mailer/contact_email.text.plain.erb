@@ -1,4 +1,6 @@
 <%= @contact.message %>
-
--------------------------------------
-<%= SpreeContactUs.require_name ? t('sent_by_name', :email => @contact.email, :name => @contact.name) : t('sent_by_contact_form', :email => @contact.email) %>
+---------------------
+Nome: <%= @contact.name %>
+Email: <%= @contact.email %>
+Cidade: <%= @contact.city %>
+Telefone: <%= @contact.phone %>
